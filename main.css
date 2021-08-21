@@ -5,6 +5,7 @@
 
 html {
   size: 100%;
+  background-color: aquamarine;
 }
 
 .box {
@@ -36,12 +37,22 @@ html {
 
 .box1 {
   background-color: red;
-  padding: 2px;
+  width: 200px;
+  height: 200px;
+  position: relative;
+  right: 0px;
 }
 
 .box2 {
-  background-color: violet;
+  background-color: rgba(250, 135, 212, 0.7);
   border: black dashed 4px;
+  position: absolute;
+  width: unset;
+  height: unset;
+  top: 10px;
+  bottom: 10px;
+  right: 10px;
+  left: 10px;
 }
 
 .box3 {
@@ -54,14 +65,9 @@ html {
 }
 
 .container {
-  width: 100vw;
-  height: 100vh;
-  /* background-image: url(https://media.istockphoto.com/photos/black-and-white-doggy-tile-pattern-repeat-background-picture-id490428980?s=612x612);
-  background-size: contain;
-  background-repeat: repeat;
-  background-position: center; */
-
-  background: url(https://media.istockphoto.com/photos/black-and-white-doggy-tile-pattern-repeat-background-picture-id490428980?s=612x612)
-    round center;
-  background-size: var(--bg-size);
+  background-color: bisque;
+  position: relative;
+  width: 70vw;
+  left: 50px;
+  top: 50px;
 }
