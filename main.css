@@ -1,5 +1,6 @@
 :root {
   --text-color: rgb(219, 59, 198);
+  --bg-size: 25%;
 }
 
 html {
@@ -15,16 +16,17 @@ html {
 }
 
 .big-box {
-  width: 100px;
-  height: 100px;
+  width: 200px;
+  height: 200px;
   background-color: #59e959;
-  border: 1px solid black;
+  border: 10px dotted violet;
   display: flex;
   justify-content: center;
   align-items: center;
   margin: 10px;
-  padding: 10%;
+  padding: 20px;
   box-sizing: border-box;
+  background-clip: content-box;
 }
 
 .box:hover {
@@ -49,4 +51,17 @@ html {
 
 .box4 {
   background-color: blue;
+}
+
+.container {
+  width: 100vw;
+  height: 100vh;
+  /* background-image: url(https://media.istockphoto.com/photos/black-and-white-doggy-tile-pattern-repeat-background-picture-id490428980?s=612x612);
+  background-size: contain;
+  background-repeat: repeat;
+  background-position: center; */
+
+  background: url(https://media.istockphoto.com/photos/black-and-white-doggy-tile-pattern-repeat-background-picture-id490428980?s=612x612)
+    round center;
+  background-size: var(--bg-size);
 }
