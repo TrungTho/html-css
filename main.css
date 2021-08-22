@@ -52,7 +52,7 @@ html {
   top: 10px;
   bottom: 10px;
   right: 10px;
-  left: 10px;
+  left: 50%;
 }
 
 .box3 {
@@ -61,13 +61,18 @@ html {
 }
 
 .box4 {
-  background-color: blue;
+  background-color: rgba(0, 0, 255, 0.5);
+  position: fixed;
+  width: unset;
+  left: 100px;
+  right: 100px;
 }
 
 .container {
   background-color: bisque;
   position: relative;
   width: 70vw;
+  height: 10000px;
   left: 50px;
   top: 50px;
 }
