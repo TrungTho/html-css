@@ -18,11 +18,11 @@ a {
 
 html {
   font-family: Helvetica, Arial, sans-serif;
-  background-color: aquamarine;
 }
 
 #main {
 }
+
 #header {
   font-size: 100%;
   height: 46px;
@@ -32,11 +32,13 @@ html {
   left: 0px;
   right: 0px;
   line-height: 46px;
+  z-index: 10;
 }
 
 #nav {
   line-height: inherit;
   height: inherit;
+  display: inline-block;
 }
 
 #nav li {
@@ -55,6 +57,7 @@ html {
 #nav > li > a {
   color: white;
   text-transform: uppercase;
+  font-weight: 400;
 }
 
 #nav li a {
@@ -82,12 +85,175 @@ html {
   min-width: 150px;
 }
 
+.text-white {
+  color: white;
+}
+
+.black-background {
+  background-color: black;
+}
+
 #slider {
-  font-size: 100%;
+  margin-top: 46px;
+  padding-top: 50%;
+  background: url("/assets/img/slider1.jpg");
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: cover;
+  position: relative;
+  text-align: center;
 }
+
+#slider h3 {
+  position: absolute;
+  bottom: 80px;
+  width: 100%;
+  font-weight: lighter;
+}
+
+#slider p {
+  position: absolute;
+  bottom: 40px;
+  width: 100%;
+  font-weight: bold;
+}
+
 #content {
-  font-size: 100%;
+  height: 400px;
+  text-align: center;
+  align-items: center;
+  display: flex;
+  flex-flow: column;
 }
+
+#content .content-item {
+  margin: 0 20px;
+
+  text-align: center;
+  max-width: 800px;
+  padding: 64px 0;
+}
+
+#content h2 {
+  letter-spacing: 4px;
+  font-weight: 400;
+  margin: 10px 0;
+  text-transform: uppercase;
+  font-size: 30px;
+}
+
+#content .slogan {
+  font-style: italic;
+  opacity: 0.6;
+  margin: 15px 0;
+}
+
+#content .text {
+  margin: 15px 0;
+  text-align: justify;
+}
+
+#content .item-name {
+  font-size: 15px;
+}
+#content .item-img {
+  width: 150px;
+  border-radius: 5px;
+}
+
+#content #list-band-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+#content .band-item {
+  padding: 32px 0;
+}
+
+#content .band-item .name {
+  margin: 15px 0;
+}
+
+#content .band-item .avatar {
+  margin-bottom: 16px;
+  width: 60%;
+  border-radius: 4px;
+}
+
+/* tour section */
+#content .tour-shedule {
+  background-color: white;
+  color: black;
+  text-align: left;
+  list-style: none;
+  font-size: 15px;
+}
+
+#content .tour-shedule li {
+  padding: 8px 16px;
+  border-bottom: 1px solid rgb(197, 196, 196);
+  color: #757575;
+}
+
+#content .tour-shedule .sold-out {
+  background-color: red;
+  color: white;
+  margin-left: 16px;
+  padding: 0px 8px;
+  font-weight: bold;
+}
+
+#content .tour-shedule .quantity {
+  float: right;
+  width: 24px;
+  height: 24px;
+  background-color: black;
+  color: white;
+  margin-right: 16px;
+  padding: 0px 8px;
+  border-radius: 50%;
+  text-align: center;
+  box-sizing: border-box;
+  line-height: 24px;
+  margin-top: -3px;
+}
+
 #footer {
   font-size: 100%;
 }
+
+#header .search-button {
+  float: right;
+  width: 46px;
+  position: relative;
+}
+
+#header .search-button:hover {
+  background-color: red;
+  cursor: pointer;
+}
+
+.search-button .ti-search {
+  /* position: absolute; */
+  padding: 0 33%;
+  font-weight: bolder;
+  width: unset;
+  height: unset;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  color: white;
+}
+
+/* p {
+  display: bl;
+  background-color: orange;
+  height: 100px;
+  width: 100px;
+  border: black solid 1px;
+  margin: 10px;
+  padding: 10px;
+  background-clip: content-box;
+} */
